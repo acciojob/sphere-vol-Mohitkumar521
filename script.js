@@ -3,12 +3,6 @@ function volume_sphere() {
   const radiusInput = document.getElementById('radius');
   const radius = parseFloat(radiusInput.value);
 
-  // Check if the input is a valid number
-  if (isNaN(radius)) {
-    alert('Please enter a valid number for the radius.');
-    return false;
-  }
-
   // Calculate the volume of the sphere
   const volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
 
